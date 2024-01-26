@@ -7,7 +7,7 @@ import { UserContext } from "../../components/context/user.context";
 import { ReactComponent as OtakuLogo } from "../../assets/logo.svg";
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
-  console.log(currentUser);
+  //console.log(currentUser);
   return (
     <Fragment>
       <div className="navigation">
