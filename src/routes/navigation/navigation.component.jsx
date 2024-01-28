@@ -5,9 +5,16 @@ import "./navigation.styles.scss";
 import { UserContext } from "../../components/context/user.context";
 
 import { ReactComponent as OtakuLogo } from "../../assets/logo.svg";
+
+import { signOutUser } from "../../utils/firebase/firebase.utils";
 const Navigation = () => {
-  const { currentUser } = useContext(UserContext);
+  const { currentUser, setCurrentUser } = useContext(UserContext);
   //console.log(currentUser);
+
+  const signOutHandler = async (user) => {
+    await signOutUser();
+    setCurrentUser(null);
+  };
   return (
     <Fragment>
       <div className="navigation">
@@ -19,9 +26,15 @@ const Navigation = () => {
           <Link className="nav-link" to="/">
             Shop
           </Link>
-          <Link className="nav-link" to="/auth">
-            Sign In
-          </Link>
+          {currentUser ? (
+            <Link className="nav-link" onClick={signOutHandler}>
+              Sign Out
+            </Link>
+          ) : (
+            <Link className="nav-link" to="/auth">
+              Sign In
+            </Link>
+          )}
         </div>
       </div>
       <Outlet />
