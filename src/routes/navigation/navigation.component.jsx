@@ -8,13 +8,10 @@ import { ReactComponent as OtakuLogo } from "../../assets/logo.svg";
 
 import { signOutUser } from "../../utils/firebase/firebase.utils";
 const Navigation = () => {
-  const { currentUser, setCurrentUser } = useContext(UserContext);
+  const { currentUser } = useContext(UserContext);
   //console.log(currentUser);
 
-  const signOutHandler = async (user) => {
-    await signOutUser();
-    setCurrentUser(null);
-  };
+ 
   return (
     <Fragment>
       <div className="navigation">
@@ -27,7 +24,7 @@ const Navigation = () => {
             Shop
           </Link>
           {currentUser ? (
-            <Link className="nav-link" onClick={signOutHandler}>
+            <Link className="nav-link" onClick={signOutUser}>
               Sign Out
             </Link>
           ) : (
