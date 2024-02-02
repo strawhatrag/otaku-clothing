@@ -1,17 +1,28 @@
-.sign-in-container{
+$background-color: #000000;   // black
+$container-border: #702DD5;    // purple
+$text-color: #C28CE2;          // lavender
+$button-background: #4C2584;   // dark blue
+$button-text: #FFFFFF;         // white
+
+.sign-in-container {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  background-color: $background-color;  // Set background color
+  color: $text-color;  // Set text color
+
+  h2 {
+    margin: 10px 0;
+    color: $text-color;  // Match text color
+  }
+
+  .buttons-container {
     display: flex;
-    flex-direction: column;
-    width: 380px;
+    justify-content: space-between;
 
-    h2{
-        margin: 10px 0;
+    button {
+      background-color: $button-background;  // Set button background color
+      color: $button-text;  // Set button text color
     }
-
-    .buttons-container{
-
-        display: flex;
-        justify-content: space-between;
-    }
+  }
 }
-
- 

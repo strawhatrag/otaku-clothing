@@ -1,6 +1,17 @@
-.authentication-container{
-    display: flex;
-    width: 900px;
-    justify-content: space-between;
-    margin: 30px auto;
+$background-color: #000000;   // black
+$container-border: #702DD5;    // purple
+$text-color: #C28CE2;          // lavender
+
+.authentication-container {
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+  margin: 30px auto;
+  background-color: $background-color;  // Set background color
+ 
+
+  // You might want to adjust the text color based on your design
+  color: $text-color;
+
+  // You can add additional styling for the authentication container as needed
 }

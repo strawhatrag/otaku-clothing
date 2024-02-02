@@ -1,20 +1,37 @@
+$background-color: #000000;   // black
+$link-color: #702DD5;         // purple
+$header-color: #C28CE2;       // lavender
+$footer-color: #4C2584;       // dark blue
+
 body {
   margin: 0;
   font-family: 'Open Sans Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $background-color;  // Set background color
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-a{
+a {
   text-decoration: none;
-  color: black;
+  color: $link-color;  // Set link color
 }
 
-*{
+* {
   box-sizing: border-box;
+}
+
+.link-color {
+  color: $link-color;  // Use this class for links
+}
+
+.header-color {
+  color: $header-color;  // Use this class for headers
+}
+
+.footer-color {
+  color: $footer-color;  // Use this class for footers
 }
