@@ -7,6 +7,8 @@ import { UserContext } from "../../components/context/user.context";
 import { ReactComponent as OtakuLogo } from "../../assets/logo.svg";
 
 import { signOutUser } from "../../utils/firebase/firebase.utils";
+
+import CartIcon from "../../components/cart-icon/cart-icon.component";
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
   //console.log(currentUser);
@@ -32,6 +34,7 @@ const Navigation = () => {
               Sign In
             </Link>
           )}
+          <CartIcon></CartIcon>
         </div>
       </div>
       <Outlet />
