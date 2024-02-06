@@ -31,7 +31,7 @@ const Navigation = () => {
             Shop
           </Link>
           {currentUser ? (
-            <Link className="nav-link" onClick={signOutUser}>
+            <Link className="nav-link " onClick={signOutUser}>
               Sign Out
             </Link>
           ) : (
