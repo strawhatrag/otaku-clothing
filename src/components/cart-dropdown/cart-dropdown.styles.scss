@@ -21,6 +21,19 @@
     display: grid;
     grid-template-rows: 1fr auto;
     overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 8px; /* Set the width of the scrollbar */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #121518; /* Set the color of the thumb */
+      border-radius: 4px; /* Optional: round the corners of the thumb */
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #f1f1f1; /* Set the color of the track */
+    }
   }
 
   button {
