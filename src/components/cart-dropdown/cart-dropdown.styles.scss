@@ -10,7 +10,6 @@
   top: 90px;
   right: 40px;
   z-index: 5;
-  
 
   .empty-message {
     font-size: 18px;
@@ -19,13 +18,13 @@
 
   .cart-items {
     height: 240px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    overflow: auto;
   }
 
   button {
-    margin-top: auto;
+    margin-top: 20px;
+    align-self: flex-end;
   }
 }
-
