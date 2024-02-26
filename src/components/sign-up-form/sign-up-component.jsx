@@ -6,7 +6,7 @@ import {
 
 import "./sign-up.form.styles.scss";
 
-import Button from "../button/button.component";
+import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 import FormInput from "../form-input/form-input.component";
 
@@ -98,7 +98,7 @@ const SignUpForm = () => {
           value={confirmPassword}
         />
 
-        <Button buttonType="button" type="submit">
+        <Button buttonType={BUTTON_TYPE_CLASSES.base} type="submit">
           Sign Up
         </Button>
       </form>
