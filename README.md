@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+## Otaku Clothing
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**E-commerce website for clothing, built with React, JavaScript, and Firebase.**
 
-## Available Scripts
+This project showcases a basic e-commerce website designed for selling clothing items, targeting audiences interested in anime and manga (otaku culture). It demonstrates the integration of frontend development using React and JavaScript, along with backend functionalities provided by Firebase.
 
-In the project directory, you can run:
+## Live Link
 
-### `npm start`
+Visit the live website: [Otaku Shopping](https://otakushopping.netlify.app)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Prerequisites:**
 
-### `npm test`
+* Git installed
+* Node.js and npm (or yarn) installed
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Steps:**
 
-### `npm run build`
+1. **Clone the repository:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+   git clone [https://github.com/strawhatrag/otaku-clothing.git](https://github.com/strawhatrag/otaku-clothing.git)
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+    npm install
+```
 
-### `npm run eject`
+3. **Running and Building**
+```
+    npm start
+```
+### Technologies Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Frontend:
+- React
+- JavaScript
+- HTML/CSS
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Backend:
+- Firebase
+  - Realtime Database (or Firestore)
+  - Authentication
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Deployment:
+- Netlify (or any other hosting platform)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Contributing
 
-## Learn More
+We welcome contributions to this project! Please feel free to fork the repository, make changes, and submit pull requests.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Development Environment Setup:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Create a Firebase project at Firebase Console.
+2. Follow Firebase's documentation to set up authentication and database (Realtime Database or Firestore) services in your project.
+3. Add your Firebase project configuration to the project's code (typically in a file like `firebase.config.js`).
 
-### Code Splitting
+### Contributing Code:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Fork the repository.
+2. Make your changes and commit them.
+3. Push your changes to your fork.
+4. Create a pull request from your fork to the upstream repository.
 
-### Analyzing the Bundle Size
+### License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License. See the LICENSE file for details.
